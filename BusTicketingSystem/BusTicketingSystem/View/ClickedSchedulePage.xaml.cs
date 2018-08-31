@@ -15,6 +15,7 @@ namespace BusTicketingSystem.View
 		public ClickedSchedulePage ()
 		{
 			InitializeComponent ();
+            
 		}
 	}
 }

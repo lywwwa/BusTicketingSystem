@@ -2,12 +2,76 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BusTicketingSystem.View.ClickedSchedulePage"
-             Title="Hello">
+            Title="Bus Schedule"
+             BackgroundColor="#40c8c2">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Menu_Logo.png" Name="Menu" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+ 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10,0,20,0">
+            <Grid
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                RowSpacing="0" ColumnSpacing="0">
+                <Label Text="Bus Type"
+                       FontSize="Large"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       BackgroundColor="#4976ab"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="Ordinary"
+                       FontSize="Medium"
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       BackgroundColor="#4ea5d2"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="Regular(w/ Aircon)"
+                       FontSize="Medium"
+                       Grid.Column="0"
+                       Grid.Row="2"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="Deluxe"
+                       FontSize="Medium"
+                       Grid.Column="0"
+                       Grid.Row="3"
+                       BackgroundColor="#4ea5d2"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+
+                <Label Text="Price"
+                       FontSize="Large"
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       BackgroundColor="#4976ab"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="put price here"
+                       FontSize="Medium"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       BackgroundColor="#4ea5d2"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="put price here"
+                       FontSize="Medium"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="put price here"
+                       FontSize="Medium"
+                       Grid.Column="1"
+                       Grid.Row="3"
+                       BackgroundColor="#4ea5d2"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

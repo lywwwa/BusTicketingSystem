@@ -7,9 +7,11 @@
     <StackLayout>
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
+           HorizontalOptions="CenterAndExpand"
            VerticalOptions="Center" />
-        <Button Text="Reserve Seats" Clicked="Button_Clicked"/>
+        <Button Text="Reserve Seats" Clicked="Button_Clicked"
+                HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand"/>
     </StackLayout>
 
 </ContentPage>

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BusTicketingSystem.View.BusSchedulePage"
              Title="Bus Schedule"
-             BackgroundColor="#43cdca">
+             BackgroundColor="#40c8c2">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="Menu_Logo.png" Name="Menu" Order="Primary"/>
     </ContentPage.ToolbarItems>

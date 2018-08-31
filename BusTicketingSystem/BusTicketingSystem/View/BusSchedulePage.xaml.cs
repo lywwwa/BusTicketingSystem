@@ -17,7 +17,7 @@ namespace BusTicketingSystem.View
 			InitializeComponent ();
             
             BindingContext = new Controller.BusScheduleController();
-           // BusSchedListView.ItemsSource = new Model.BusSchedule();
+        
 		}
 
         public async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

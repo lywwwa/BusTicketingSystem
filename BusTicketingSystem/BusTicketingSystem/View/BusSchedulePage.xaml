@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusTicketingSystem.View.BusSchedulePage"
+             Title="Bus Schedule"
+             BackgroundColor="#43cdca">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Menu_Logo.png" Name="Menu" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+    <ListView ItemsSource="{Binding BusSchedules}"
+                  HasUnevenRows="True"
+              ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate >
+            <DataTemplate >
+                    <ViewCell >
+                        <StackLayout Orientation="Vertical" >
+                            <Grid HeightRequest="20"/>
+                            <StackLayout Orientation="Vertical"
+                                     Padding="20" BackgroundColor="#52add4">
+                                <Label Text="{Binding Origin}" 
+                               FontSize="Medium"
+                               TextColor="AntiqueWhite"/>
+                                <Label Text="{Binding Destination}"
+                               FontSize="Medium"
+                               TextColor="AntiqueWhite"/>
+                        <Label Text="{Binding Time} "
+                               FontSize="Small"
+                               TextColor="AntiqueWhite"/>
+                        </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </ContentPage.Content>
+</ContentPage>

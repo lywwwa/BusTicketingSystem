@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusTicketingSystem.View.SeatPlanPage"
+             BackgroundColor="#40c8c2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="insert seat plan here"
+                />
+
+                <Grid Padding="10,10,20,0"
+                      RowSpacing="0" ColumnSpacing="0">
+                    <Label Text="Price :"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           BackgroundColor="#595386"
+                           TextColor="AntiqueWhite"
+                           FontSize="Medium"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="Quantity :"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           TextColor="AntiqueWhite"
+                           VerticalTextAlignment="Center"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="Total Amount :"
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           BackgroundColor="#595386"
+                           TextColor="AntiqueWhite"
+                           VerticalTextAlignment="Center"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="{Binding Price}"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           BackgroundColor="#595386"
+                           TextColor="AntiqueWhite"/>
+                    <Label Text="{Binding Quantity}"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           TextColor="AntiqueWhite"/>
+                    <Label Text="{Binding TotalAmount}"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           BackgroundColor="#595386"
+                           TextColor="AntiqueWhite"/>
+
+                    <Button Text="Checkout"
+                            Clicked="Clicked_Checkout"
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

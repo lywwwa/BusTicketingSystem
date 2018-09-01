@@ -21,26 +21,40 @@
                        BackgroundColor="#4976ab"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
+
                 <Label Text="Ordinary"
                        FontSize="Medium"
                        Grid.Column="0"
                        Grid.Row="1"
                        BackgroundColor="#4ea5d2"
                        VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
+                       HorizontalTextAlignment="Center"
+                       >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapOrdinary" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
                 <Label Text="Regular(w/ Aircon)"
                        FontSize="Medium"
                        Grid.Column="0"
                        Grid.Row="2"
                        VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
+                       HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapRegular" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
                 <Label Text="Deluxe"
                        FontSize="Medium"
                        Grid.Column="0"
                        Grid.Row="3"
                        BackgroundColor="#4ea5d2"
                        VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
+                       HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapDeluxe" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
 
                 <Label Text="Price"
                        FontSize="Large"

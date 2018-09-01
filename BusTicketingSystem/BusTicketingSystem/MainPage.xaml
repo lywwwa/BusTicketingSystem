@@ -2,16 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BusTicketingSystem"
-             x:Class="BusTicketingSystem.MainPage">
+             x:Class="BusTicketingSystem.MainPage"
+             BackgroundColor="#42ccc8">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="CenterAndExpand"
-           VerticalOptions="Center" />
-        <Button Text="Reserve Seats" Clicked="Button_Clicked"
-                HorizontalOptions="CenterAndExpand"
-           VerticalOptions="CenterAndExpand"/>
+        <StackLayout Padding="0,80,0,0">
+            <Image Source="Bus_Logo.png"
+                       WidthRequest = "200"
+                       HeightRequest = "200"/>
+        </StackLayout>
+        <AbsoluteLayout Padding="0,40,0,0" >
+            <Button Text="Reserve Seats" 
+                    Clicked="Button_Clicked"
+                    TextColor="AntiqueWhite"
+                    BackgroundColor="#524365"
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    AbsoluteLayout.LayoutBounds=".5,0,.83,.25" 
+                    AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
     </StackLayout>
 
 </ContentPage>

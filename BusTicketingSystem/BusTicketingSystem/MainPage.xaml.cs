@@ -12,6 +12,7 @@ namespace BusTicketingSystem
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         public void Button_Clicked(object sender, EventArgs e)

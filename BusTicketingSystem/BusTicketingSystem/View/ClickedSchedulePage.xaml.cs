@@ -17,5 +17,23 @@ namespace BusTicketingSystem.View
 			InitializeComponent ();
             
 		}
-	}
+
+        public void OnTapOrdinary(object sender, EventArgs args)
+        {
+            this.Navigation.PushAsync(new SeatPlanPage());
+            //open seatplann for ordinary
+        }
+
+        private void OnTapRegular(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new SeatPlanPage());
+            //open seatplan for regular
+        }
+
+        private void OnTapDeluxe(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new SeatPlanPage());
+            //open seatplan for deluxe
+        }
+    }
 }

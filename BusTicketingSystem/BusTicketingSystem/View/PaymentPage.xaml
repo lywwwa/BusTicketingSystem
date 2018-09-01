@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BusTicketingSystem.View.PaymentPage"
              Title="Payment"
-             BackgroundColor="#40c8c2">
+             BackgroundColor="#0E4D92">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"

@@ -3,22 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BusTicketingSystem.View.ClickedSchedulePage"
             Title="Bus Schedule"
-             BackgroundColor="#40c8c2">
+             BackgroundColor="#0E4D92">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="Menu_Logo.png" Name="Menu" Order="Primary"/>
     </ContentPage.ToolbarItems>
  
     <ContentPage.Content>
         <StackLayout Padding="10,0,20,0">
+            <Label Text=" "
+                   x:Name="SchedPick"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
             <Grid
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
-                RowSpacing="0" ColumnSpacing="0">
-                <Label Text="Bus Type"
+                RowSpacing="20" ColumnSpacing="0">
+                <Label Text="BUS TYPE"
                        FontSize="Large"
+                       FontAttributes="Bold"
                        Grid.Column="0"
                        Grid.Row="0"
                        BackgroundColor="#4976ab"
+                       TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
 
@@ -27,6 +33,7 @@
                        Grid.Column="0"
                        Grid.Row="1"
                        BackgroundColor="#4ea5d2"
+                       TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"
                        >
@@ -39,7 +46,8 @@
                        Grid.Column="0"
                        Grid.Row="2"
                        VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center">
+                       HorizontalTextAlignment="Center"
+                       TextColor="AntiqueWhite">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapRegular" NumberOfTapsRequired="1"/>
                     </Label.GestureRecognizers>
@@ -50,17 +58,20 @@
                        Grid.Row="3"
                        BackgroundColor="#4ea5d2"
                        VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center">
+                       HorizontalTextAlignment="Center"
+                       TextColor="AntiqueWhite">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapDeluxe" NumberOfTapsRequired="1"/>
                     </Label.GestureRecognizers>
                 </Label>
 
-                <Label Text="Price"
+                <Label Text="PRICE"
                        FontSize="Large"
+                       FontAttributes="Bold"
                        Grid.Column="1"
                        Grid.Row="0"
                        BackgroundColor="#4976ab"
+                       TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
                 <Label Text="put price here"
@@ -68,12 +79,14 @@
                        Grid.Column="1"
                        Grid.Row="1"
                        BackgroundColor="#4ea5d2"
+                       TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
                 <Label Text="put price here"
                        FontSize="Medium"
                        Grid.Column="1"
                        Grid.Row="2"
+                       TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
                 <Label Text="put price here"
@@ -81,8 +94,13 @@
                        Grid.Column="1"
                        Grid.Row="3"
                        BackgroundColor="#4ea5d2"
+                       TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
+
+                <Image Source="BusSide_Logo.png"
+                       WidthRequest = "200"
+                       HeightRequest = "200"/>
 
 
             </Grid>

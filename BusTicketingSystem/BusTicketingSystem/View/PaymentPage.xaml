@@ -12,11 +12,13 @@
 
             <Entry Placeholder="Complete Name (Ex. Jobelle B. Sison)"
                 VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                   x:Name="FullName"/>
 
             <Entry Placeholder="Contact Number (Ex. 09160000000)"
                 VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                   x:Name="Contact"/>
 
             <Label Text="Please put correct email address"
                 VerticalOptions="Start"
@@ -24,7 +26,8 @@
 
             <Entry Placeholder="Email Address"
                 VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                   x:Name="EmailAdd"/>
 
             <Label Text="Complete Address"
                 VerticalOptions="Start"
@@ -32,9 +35,11 @@
 
             <Entry Placeholder="Lot #, Street, Barangay, City"
                 VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                   x:Name="Address"/>
 
-
+            <Button Text="Checkout"
+                    Clicked="Clicked_Checkout"/>
 
         </StackLayout>
     </ContentPage.Content>

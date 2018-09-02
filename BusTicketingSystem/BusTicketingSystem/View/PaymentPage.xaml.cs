@@ -17,5 +17,13 @@ namespace BusTicketingSystem.View
 			InitializeComponent ();
             //user info and payment details
 		}
+
+        public void Clicked_Checkout(object sender,EventArgs e)
+        {
+            Model.Data data_ = new Model.Data();
+
+            data_.GetUserInfo(FullName.Text,Address.Text,EmailAdd.Text,Contact.Text);
+
+        }
 	}
 }

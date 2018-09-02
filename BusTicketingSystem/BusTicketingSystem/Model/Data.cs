@@ -44,6 +44,12 @@ namespace BusTicketingSystem.Model
             }
         };
 
-       
+       public void GetUserInfo(string FullName,string Address,string email,string contact)
+        {
+            string FName = FullName;
+            string Add = Address;
+            string EMail = email;
+            string ContactNo = contact;
+        }
     }
 }

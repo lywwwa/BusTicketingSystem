@@ -15,6 +15,7 @@ namespace BusTicketingSystem.View
 		public ClickedSchedulePage ()
 		{
 			InitializeComponent ();
+
             Model.Data dt = new Model.Data();
 
             string prc = dt.Prices("OrdinaryPrice");
@@ -24,7 +25,7 @@ namespace BusTicketingSystem.View
             RegPrice.Text = prc1;
 
             string prc2 = dt.Prices("DeluxePrice");
-            OrdPrice.Text = prc2;
+            DelPrice.Text = prc2;
 
         }
 

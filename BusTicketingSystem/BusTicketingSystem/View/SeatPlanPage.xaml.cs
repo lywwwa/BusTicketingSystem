@@ -12,6 +12,8 @@ namespace BusTicketingSystem.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SeatPlanPage : ContentPage
 	{
+        int qty = 0;
+
 		public SeatPlanPage ()
 		{
             //grids
@@ -21,6 +23,8 @@ namespace BusTicketingSystem.View
         public void Clicked_Seat(object sender,EventArgs e)
         {
             BackgroundColor = Color.FromHex("#63539e");
+            qty++;
+            Quantity.Text = ""+qty;
         }
 
         public async void Clicked_Checkout(object sender,EventArgs e)

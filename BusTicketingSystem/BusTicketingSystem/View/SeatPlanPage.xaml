@@ -278,16 +278,19 @@
                            FontSize="Medium"
                            HorizontalTextAlignment="Center"/>
 
-                    <Label Text="{Binding Price}"
+                    <Label Text=" "
+                           x:Name="Price"
                            Grid.Row="0"
                            Grid.Column="1"
                            BackgroundColor="#52add4"
                            TextColor="AntiqueWhite"/>
-                    <Label Text="{Binding Quantity}"
+                    <Label Text=" "
+                           x:Name="Quantity"
                            Grid.Row="1"
                            Grid.Column="1"
                            TextColor="AntiqueWhite"/>
-                    <Label Text="{Binding TotalAmount}"
+                    <Label Text=" "
+                           x:Name="TotAmt"
                            Grid.Row="2"
                            Grid.Column="1"
                            BackgroundColor="#52add4"

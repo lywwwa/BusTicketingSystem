@@ -7,6 +7,27 @@ namespace BusTicketingSystem.Model
 {
    public class Data
     {
+        public string Prices(string type)
+        {
+            if (type == "OrdinaryPrice")
+            {
+                return "50.00";
+            }
+            else if (type == "RegularPrice")
+            {
+                return "25.00";
+            }
+            else if (type == "DeluxePrice")
+            {
+                return "150.00";
+            }
+            else
+            {
+                return "0";
+            }
+        }
+       
+
         public List<BusSchedule> BSched = new List<BusSchedule>() {
             new BusSchedule()
             {
@@ -22,5 +43,7 @@ namespace BusTicketingSystem.Model
                 Time="12:30 PM"
             }
         };
+
+       
     }
 }

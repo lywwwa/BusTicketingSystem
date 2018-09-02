@@ -8,8 +8,8 @@ namespace BusTicketingSystem.Model
     {
         public String Origin { get; set; }
         public String Destination { get; set; }
-       public String Time { get; set; }
-
+        public String Time { get; set; }
+        
         
 
     }

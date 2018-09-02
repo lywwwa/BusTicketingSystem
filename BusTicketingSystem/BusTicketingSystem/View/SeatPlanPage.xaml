@@ -3,14 +3,257 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BusTicketingSystem.View.SeatPlanPage"
              BackgroundColor="#0E4D92">
+    
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="insert seat plan here"
-                />
+                <Label Text="Seat Reservation"
+                       FontSize="Medium"
+                       TextColor="AntiqueWhite"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       />
+
+                <Grid Padding="10,10,10,0"
+                     RowSpacing="3" ColumnSpacing="3">
+
+                    <Button x:Name="s1"
+                            Text="s1"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        Clicked="Clicked_Seat"
+                        />
+
+                    <Button x:Name="s2"
+                            Text="s2"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                            Clicked="Clicked_Seat"
+                        />
+
+                    <Button x:Name="s3"
+                            Text="s3"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s4"
+                            Text="s4"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s5"
+                            Text="s5"
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s6"
+                            Text="s6"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s7"
+                            Text="s7"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s8"
+                            Text="s8"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s9"
+                            Text="s9"
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s10"
+                            Text="s10"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s11"
+                            Text="s11"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s12"
+                            Text="s12"
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s13"
+                            Text="s13"
+                        Grid.Row="2"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s14"
+                            Text="s14"
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s15"
+                            Text="s15"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s16"
+                            Text="s16"
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s17"
+                            Text="s17"
+                        Grid.Row="3"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s18"
+                            Text="s18"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s19"
+                            Text="s19"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s20"
+                            Text="s20"
+                        Grid.Row="4"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s21"
+                            Text="s21"
+                        Grid.Row="4"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s22"
+                            Text="s22"
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s23"
+                            Text="s23"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s24"
+                            Text="s24"
+                        Grid.Row="5"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s25"
+                            Text="s25"
+                        Grid.Row="5"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s26"
+                            Text="s26"
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s27"
+                            Text="s27"
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s28"
+                            Text="s28"
+                        Grid.Row="6"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s29"
+                            Text="s29"
+                        Grid.Row="6"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+                </Grid>
 
                 <Grid Padding="10,10,20,0"
-                      RowSpacing="0" ColumnSpacing="0">
+                    RowSpacing="0" ColumnSpacing="0">
                     <Label Text="Price :"
                            Grid.Row="0"
                            Grid.Column="0"
@@ -59,6 +302,6 @@
                 </Grid>
             </StackLayout>
         </ScrollView>
-        
+
     </ContentPage.Content>
 </ContentPage>

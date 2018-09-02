@@ -15,8 +15,18 @@ namespace BusTicketingSystem.View
 		public ClickedSchedulePage ()
 		{
 			InitializeComponent ();
-            
-		}
+            Model.Data dt = new Model.Data();
+
+            string prc = dt.Prices("OrdinaryPrice");
+            OrdPrice.Text = prc;
+
+            string prc1 = dt.Prices("RegularPrice");
+            RegPrice.Text = prc1;
+
+            string prc2 = dt.Prices("DeluxePrice");
+            OrdPrice.Text = prc2;
+
+        }
 
         public void OnTapOrdinary(object sender, EventArgs args)
         {

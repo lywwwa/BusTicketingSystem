@@ -20,5 +20,11 @@ namespace BusTicketingSystem
             this.Navigation.PushAsync(new View.BusSchedulePage());
            // this.Navigation.RemovePage(this);
         }
+
+        public void Cancel_Clicked(object sender, EventArgs e)
+        {
+            //this.Navigation.PushAsync(new View.SearchPage());
+            // this.Navigation.RemovePage(this);
+        }
     }
 }

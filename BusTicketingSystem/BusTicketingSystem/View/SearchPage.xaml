@@ -1,29 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:BusTicketingSystem"
-             x:Class="BusTicketingSystem.MainPage"
-             BackgroundColor="#0E4D92">
-
-    <StackLayout>
-        <StackLayout Padding="0,80,0,0">
-            <Image Source="Bus_Logo.png"
+             x:Class="BusTicketingSystem.View.SearchPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="0,80,0,0">
+                <Image Source="Bus_Logo.png"
                        WidthRequest = "200"
                        HeightRequest = "200"/>
-        </StackLayout>
-        <AbsoluteLayout Padding="0,40,0,0" >
-            <Button Text="Reserve Seats" 
-                    Clicked="Button_Clicked"
+            </StackLayout>
+            <AbsoluteLayout Padding="0,40,0,0" >
+                <Label Text="Enter Reservation No. :" 
                     TextColor="AntiqueWhite"
-                    BackgroundColor="#524365"
                     FontSize="Medium"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="CenterAndExpand"
                     AbsoluteLayout.LayoutBounds=".5,0,.83,.25" 
                     AbsoluteLayout.LayoutFlags="All"/>
 
-            <Button Text="Cancel Reservations" 
-                    Clicked="Cancel_Clicked"
+                <Entry
+                    x:Name="ReservationNo"
                     TextColor="AntiqueWhite"
                     BackgroundColor="#524365"
                     FontSize="Medium"
@@ -31,7 +27,7 @@
                     VerticalOptions="CenterAndExpand"
                     AbsoluteLayout.LayoutBounds=".5,.40,.83,.25"
                     AbsoluteLayout.LayoutFlags="All"/>
-        </AbsoluteLayout>
-    </StackLayout>
-
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

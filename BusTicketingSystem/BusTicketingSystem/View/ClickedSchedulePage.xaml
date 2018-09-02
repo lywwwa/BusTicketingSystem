@@ -4,9 +4,7 @@
              x:Class="BusTicketingSystem.View.ClickedSchedulePage"
             Title="Bus Schedule"
              BackgroundColor="#0E4D92">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="Menu_Logo.png" Name="Menu" Order="Primary"/>
-    </ContentPage.ToolbarItems>
+   
  
     <ContentPage.Content>
         <StackLayout Padding="10,0,20,0">
@@ -47,6 +45,7 @@
                        Grid.Row="2"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"
+                       BackgroundColor="#4976ab"
                        TextColor="AntiqueWhite">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapRegular" NumberOfTapsRequired="1"/>
@@ -74,7 +73,8 @@
                        TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="put price here"
+                <Label Text=""
+                       x:Name="OrdPrice"
                        FontSize="Medium"
                        Grid.Column="1"
                        Grid.Row="1"
@@ -82,14 +82,17 @@
                        TextColor="AntiqueWhite"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="put price here"
+                <Label Text=""
+                       x:Name="RegPrice"
                        FontSize="Medium"
                        Grid.Column="1"
                        Grid.Row="2"
                        TextColor="AntiqueWhite"
+                       BackgroundColor="#4976ab"
                        VerticalTextAlignment="Center"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="put price here"
+                <Label Text=""
+                       x:Name="DelPrice"
                        FontSize="Medium"
                        Grid.Column="1"
                        Grid.Row="3"
@@ -100,7 +103,10 @@
 
                 <Image Source="BusSide_Logo.png"
                        WidthRequest = "200"
-                       HeightRequest = "200"/>
+                       HeightRequest = "200"
+                       Grid.Row="4"
+                       Grid.ColumnSpan="2"
+                       Grid.Column="0"/>
 
 
             </Grid>

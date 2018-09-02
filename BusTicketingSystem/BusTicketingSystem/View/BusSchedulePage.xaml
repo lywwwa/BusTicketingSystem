@@ -5,9 +5,7 @@
              Title="Bus Schedule"
              BackgroundColor="#0E4D92"
              >
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="Menu_Logo.png" Name="Menu" Order="Primary"/>
-    </ContentPage.ToolbarItems>
+   
     <ContentPage.Content>
     <ListView ItemsSource="{Binding BusSchedules}"
                   HasUnevenRows="True"

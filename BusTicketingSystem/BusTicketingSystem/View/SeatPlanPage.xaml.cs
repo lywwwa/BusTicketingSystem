@@ -18,6 +18,11 @@ namespace BusTicketingSystem.View
 			InitializeComponent ();
 		}
 
+        public void Clicked_Seat(object sender,EventArgs e)
+        {
+            BackgroundColor = Color.FromHex("#63539e");
+        }
+
         public async void Clicked_Checkout(object sender,EventArgs e)
         {
             /*if (seat==0){

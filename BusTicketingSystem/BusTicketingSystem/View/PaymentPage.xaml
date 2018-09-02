@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusTicketingSystem.View.PaymentPage"
+             Title="Payment"
+             BackgroundColor="#0E4D92">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Customer Information"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+
+            <Entry Placeholder="Complete Name (Ex. Jobelle B. Sison)"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+
+            <Entry Placeholder="Contact Number (Ex. 09160000000)"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+            
+            <Label Text="Please make sure you use a working e-mail address because confirmation message will be sent there."
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+
+            <Entry Placeholder="Email Address"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+
+            <Label Text="Complete Address"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+
+            <Entry Placeholder="Lot #, Street, Barangay, City"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

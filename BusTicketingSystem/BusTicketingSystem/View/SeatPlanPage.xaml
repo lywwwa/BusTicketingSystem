@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusTicketingSystem.View.SeatPlanPage"
+             BackgroundColor="#0E4D92">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Seat Reservation"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Expand"
+                       />
+
+                <Grid Padding="10,10,10,0"
+                     RowSpacing="3" ColumnSpacing="3">
+
+                    <Button x:Name="s1"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s2"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s3"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s4"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s5"
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s6"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s7"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s8"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s9"
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s10"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s11"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s12"
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s13"
+                        Grid.Row="2"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s14"
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s15"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s16"
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s17"
+                        Grid.Row="3"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s18"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s19"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s20"
+                        Grid.Row="4"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s21"
+                        Grid.Row="4"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s22"
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s23"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s24"
+                        Grid.Row="5"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s25"
+                        Grid.Row="5"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s26"
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s27"
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s28"
+                        Grid.Row="6"
+                        Grid.Column="3"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+
+                    <Button x:Name="s29"
+                        Grid.Row="6"
+                        Grid.Column="4"
+                        BackgroundColor="#52add4"
+                        TextColor="AntiqueWhite"
+                        />
+                </Grid>
+
+                    <Grid Padding="10,10,20,0"
+                    RowSpacing="0" ColumnSpacing="0">
+                    <Label Text="Price :"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite"
+                           FontSize="Medium"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="Quantity :"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           TextColor="AntiqueWhite"
+                           VerticalTextAlignment="Center"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="Total Amount :"
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite"
+                           VerticalTextAlignment="Center"
+                           FontSize="Medium"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="{Binding Price}"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite"/>
+                    <Label Text="{Binding Quantity}"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           TextColor="AntiqueWhite"/>
+                    <Label Text="{Binding TotalAmount}"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite"/>
+
+                    <Button Text="Checkout"
+                            Clicked="Clicked_Checkout"
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -14,242 +14,402 @@
                        VerticalOptions="CenterAndExpand"
                        />
 
-                <Grid Padding="10,10,10,0"
+                <Grid Padding="0,10,0,0"
                      RowSpacing="3" ColumnSpacing="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="70" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="70" />
+                    </Grid.ColumnDefinitions>
+                    
 
-                    <Button x:Name="s1"
-                            Text="s1"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        Clicked="Clicked_Seat"
-                        />
+                    <Label x:Name="s1"
+                           Text="s1"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s2"
-                            Text="s2"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                            Clicked="Clicked_Seat"
-                        />
+                    <Label x:Name="s2"
+                           Text="s2"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat2"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s3"
-                            Text="s3"
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                    <Label x:Name="s3"
+                           Text="s3"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           BackgroundColor="#52add4"
+                           TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat3"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s4"
-                            Text="s4"
-                        Grid.Row="0"
-                        Grid.Column="3"
-                        BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                    <Label x:Name="s4"
+                           Text="s4"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            BackgroundColor="#52add4"
+                            TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat4"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s5"
+                    <Label x:Name="s5"
                             Text="s5"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="0"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat5"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s6"
+                    <Label x:Name="s6"
                             Text="s6"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="1"
                         Grid.Column="0"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat6"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s7"
+                    <Label x:Name="s7"
                             Text="s7"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="1"
                         Grid.Column="1"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat7"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s8"
+                    <Label x:Name="s8"
                             Text="s8"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="1"
                         Grid.Column="3"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat8"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s9"
+                    <Label x:Name="s9"
                             Text="s9"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="1"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat9"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s10"
+                    <Label x:Name="s10"
                             Text="s10"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="2"
                         Grid.Column="0"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat10"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s11"
+                    <Label x:Name="s11"
                             Text="s11"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="2"
                         Grid.Column="1"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat11"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s12"
+                    <Label x:Name="s12"
                             Text="s12"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="2"
                         Grid.Column="3"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat12"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s13"
+                    <Label x:Name="s13"
                             Text="s13"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="2"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
-
-                    <Button x:Name="s14"
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat13"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    
+                    <Label x:Name="s14"
                             Text="s14"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="3"
                         Grid.Column="0"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat14"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s15"
+                    <Label x:Name="s15"
                             Text="s15"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="3"
                         Grid.Column="1"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat15"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s16"
+                    <Label x:Name="s16"
                             Text="s16"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="3"
                         Grid.Column="3"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat16"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s17"
+                    <Label x:Name="s17"
                             Text="s17"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="3"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat17"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s18"
+                    <Label x:Name="s18"
                             Text="s18"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="4"
                         Grid.Column="0"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat18"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s19"
+                    <Label x:Name="s19"
                             Text="s19"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="4"
                         Grid.Column="1"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat19"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s20"
+                    <Label x:Name="s20"
                             Text="s20"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="4"
                         Grid.Column="3"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat20"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s21"
+                    <Label x:Name="s21"
                             Text="s21"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="4"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat21"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s22"
+                    <Label x:Name="s22"
                             Text="s22"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="5"
                         Grid.Column="0"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat22"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s23"
+                        <Label x:Name="s23"
                             Text="s23"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="5"
                         Grid.Column="1"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat23"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s24"
+                    <Label x:Name="s24"
                             Text="s24"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="5"
                         Grid.Column="3"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat24"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s25"
+                    <Label x:Name="s25"
                             Text="s25"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="5"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat25"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s26"
+                    <Label x:Name="s26"
                             Text="s26"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="6"
                         Grid.Column="0"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat26"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s27"
+                    <Label x:Name="s27"
                             Text="s27"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="6"
                         Grid.Column="1"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat27"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s28"
+                    <Label x:Name="s28"
                             Text="s28"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="6"
                         Grid.Column="3"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat28"/>
+                        </Label.GestureRecognizers>
+                    </Label>
 
-                    <Button x:Name="s29"
+                    <Label x:Name="s29"
                             Text="s29"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                         Grid.Row="6"
                         Grid.Column="4"
                         BackgroundColor="#52add4"
-                        TextColor="AntiqueWhite"
-                        />
+                        TextColor="AntiqueWhite">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Clicked_Seat29"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Grid>
 
                 <Grid Padding="10,10,20,0"
@@ -262,6 +422,7 @@
                            FontSize="Medium"
                            VerticalTextAlignment="Center"
                            HorizontalTextAlignment="Center"/>
+                    
                     <Label Text="Quantity :"
                            Grid.Row="1"
                            Grid.Column="0"
@@ -269,6 +430,7 @@
                            VerticalTextAlignment="Center"
                            FontSize="Medium"
                            HorizontalTextAlignment="Center"/>
+                    
                     <Label Text="Total Amount :"
                            Grid.Row="2"
                            Grid.Column="0"
@@ -284,11 +446,12 @@
                            Grid.Column="1"
                            BackgroundColor="#52add4"
                            TextColor="AntiqueWhite"/>
-                    <Label Text=" "
-                           x:Name="Quantity"
+                    
+                    <Label x:Name="Quantity"
                            Grid.Row="1"
                            Grid.Column="1"
                            TextColor="AntiqueWhite"/>
+                    
                     <Label Text=" "
                            x:Name="TotAmt"
                            Grid.Row="2"

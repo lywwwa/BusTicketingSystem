@@ -5,40 +5,51 @@
              Title="Payment"
              BackgroundColor="#0E4D92">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="0,40,0,0">
             <Label Text="Customer Information"
-                VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+                VerticalOptions="Center"
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"
+                   FontSize="Medium"/>
 
             <Entry Placeholder="Complete Name (Ex. Jobelle B. Sison)"
                 VerticalOptions="Start"
                 HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"
                    x:Name="FullName"/>
 
             <Entry Placeholder="Contact Number (Ex. 09160000000)"
                 VerticalOptions="Start"
                 HorizontalOptions="Fill"
+                TextColor="AntiqueWhite"
                    x:Name="Contact"/>
 
-            <Label Text="Please put correct email address"
-                VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+            
 
             <Entry Placeholder="Email Address"
                 VerticalOptions="Start"
                 HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"
                    x:Name="EmailAdd"/>
+            <Label Text="Please put complete email address"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                TextColor="Ivory"/>
 
             <Label Text="Complete Address"
                 VerticalOptions="Start"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"/>
 
             <Entry Placeholder="Lot #, Street, Barangay, City"
                 VerticalOptions="Start"
                 HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"
                    x:Name="Address"/>
 
             <Button Text="Checkout"
+                    TextColor="AntiqueWhite"
+                    BackgroundColor="#41c9c5"
                     Clicked="Clicked_Checkout"/>
 
         </StackLayout>

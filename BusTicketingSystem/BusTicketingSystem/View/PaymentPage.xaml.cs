@@ -20,9 +20,19 @@ namespace BusTicketingSystem.View
 
         public void Clicked_Checkout(object sender,EventArgs e)
         {
-            Model.Data data_ = new Model.Data();
+            if(string.IsNullOrWhiteSpace(FullName.Text) || string.IsNullOrWhiteSpace(Address.Text) || string.IsNullOrWhiteSpace(EmailAdd.Text) || string.IsNullOrWhiteSpace(Contact.Text))
+            {
+                DisplayAlert("", "Enter complete details!", "OK");
+            }
+            else
+            {
+                Model.Data data_ = new Model.Data();
 
-            data_.GetUserInfo(FullName.Text,Address.Text,EmailAdd.Text,Contact.Text);
+                data_.GetUserInfo(FullName.Text, Address.Text, EmailAdd.Text, Contact.Text);
+                this.Navigation.PushAsync(new MainPage());
+                this.Navigation.RemovePage(this);
+            }
+
 
         }
 	}

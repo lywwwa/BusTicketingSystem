@@ -47,6 +47,31 @@
                    TextColor="AntiqueWhite"
                    x:Name="Address"/>
 
+            <Label Text="Summary of Payment:"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"/>
+            
+            <Label Text="Seats: "
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"/>
+
+            <Label x:Name="Seats"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"/>
+
+            <Label Text="Price: "
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"/>
+
+            <Label x:Name="Price"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"
+                   TextColor="AntiqueWhite"/>
+
             <Button Text="Checkout"
                     TextColor="AntiqueWhite"
                     BackgroundColor="#41c9c5"

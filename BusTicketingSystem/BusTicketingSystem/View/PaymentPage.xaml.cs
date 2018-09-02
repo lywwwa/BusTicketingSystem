@@ -12,11 +12,15 @@ namespace BusTicketingSystem.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaymentPage : ContentPage
 	{
-		public PaymentPage ()
+       
+
+        public PaymentPage ()
 		{
-			InitializeComponent ();
-            //user info and payment details
-		}
+            
+            InitializeComponent ();
+            
+
+        }
 
         public void Clicked_Checkout(object sender,EventArgs e)
         {

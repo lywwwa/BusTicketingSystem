@@ -52,5 +52,18 @@ namespace BusTicketingSystem.Model
             string EMail = email;
             string ContactNo = contact;
         }
+        public int Quantity_;
+       
+        public void Quantty(int qq)
+        {
+            Quantity_ = qq;
+        }
+        
+           
+        public int QuantitySet()
+        {
+            return Quantity_;
+        }
+
     }
 }

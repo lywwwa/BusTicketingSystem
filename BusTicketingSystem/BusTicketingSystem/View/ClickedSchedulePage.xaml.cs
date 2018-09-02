@@ -12,7 +12,9 @@ namespace BusTicketingSystem.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ClickedSchedulePage : ContentPage
 	{
-		public ClickedSchedulePage ()
+        Model.Data dt = new Model.Data();
+
+        public ClickedSchedulePage ()
 		{
 			InitializeComponent ();
 
@@ -32,18 +34,24 @@ namespace BusTicketingSystem.View
         public void OnTapOrdinary(object sender, EventArgs args)
         {
             this.Navigation.PushAsync(new SeatPlanPage());
+            string pr = dt.Prices("OrdinaryPrice");
+          
             //open seatplann for ordinary
         }
 
         private void OnTapRegular(object sender, EventArgs e)
         {
             this.Navigation.PushAsync(new SeatPlanPage());
+            string pr1 = dt.Prices("RegularPrice");
+            
             //open seatplan for regular
         }
 
         private void OnTapDeluxe(object sender, EventArgs e)
         {
             this.Navigation.PushAsync(new SeatPlanPage());
+            string pr2 = dt.Prices("DeluxePrice");
+            
             //open seatplan for deluxe
         }
     }

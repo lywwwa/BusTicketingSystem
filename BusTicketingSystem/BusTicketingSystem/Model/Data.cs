@@ -7,17 +7,17 @@ namespace BusTicketingSystem.Model
 {
    public class Data
     {
-        public string Prices(string type)
+       public string Prices(string type)
         {
-            if (type == "OrdinaryPrice")
+            if (type == "Ordinary")
             {
                 return "50.00";
             }
-            else if (type == "RegularPrice")
+            else if (type == "Regular")
             {
                 return "25.00";
             }
-            else if (type == "DeluxePrice")
+            else if (type == "Deluxe")
             {
                 return "150.00";
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusTicketingSystem.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,39 +19,46 @@ namespace BusTicketingSystem.View
 		{
 			InitializeComponent ();
 
+            /*
             Model.Data dt = new Model.Data();
 
-            string prc = dt.Prices("OrdinaryPrice");
+            string prc = dt.Prices("Ordinary");
             OrdPrice.Text = prc;
 
-            string prc1 = dt.Prices("RegularPrice");
+            string prc1 = dt.Prices("Regular");
             RegPrice.Text = prc1;
 
-            string prc2 = dt.Prices("DeluxePrice");
+            string prc2 = dt.Prices("Deluxe");
             DelPrice.Text = prc2;
-
+            */
         }
 
         public void OnTapOrdinary(object sender, EventArgs args)
         {
+            BusController.SetBusType("Ordinary");
+            BusController.SetBusFee("Ordinary");
             this.Navigation.PushAsync(new SeatPlanPage());
-            string pr = dt.Prices("OrdinaryPrice");
+            //string pr = dt.Prices("OrdinaryPrice");
           
             //open seatplann for ordinary
         }
 
         private void OnTapRegular(object sender, EventArgs e)
         {
+            BusController.SetBusType("Regular");
+            BusController.SetBusFee("Regular");
             this.Navigation.PushAsync(new SeatPlanPage());
-            string pr1 = dt.Prices("RegularPrice");
+            //string pr1 = dt.Prices("RegularPrice");
             
             //open seatplan for regular
         }
 
         private void OnTapDeluxe(object sender, EventArgs e)
         {
+            BusController.SetBusType("Deluxe");
+            BusController.SetBusFee("Deluxe");
             this.Navigation.PushAsync(new SeatPlanPage());
-            string pr2 = dt.Prices("DeluxePrice");
+            //string pr2 = dt.Prices("DeluxePrice");
             
             //open seatplan for deluxe
         }

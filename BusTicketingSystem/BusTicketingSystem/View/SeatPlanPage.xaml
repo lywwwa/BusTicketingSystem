@@ -444,18 +444,25 @@
                            x:Name="Price"
                            Grid.Row="0"
                            Grid.Column="1"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                            BackgroundColor="#52add4"
                            TextColor="AntiqueWhite"/>
                     
-                    <Label x:Name="Quantity"
+                    <Label Text=" "
+                           x:Name="Quantity"
                            Grid.Row="1"
                            Grid.Column="1"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                            TextColor="AntiqueWhite"/>
                     
                     <Label Text=" "
                            x:Name="TotAmt"
                            Grid.Row="2"
                            Grid.Column="1"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
                            BackgroundColor="#52add4"
                            TextColor="AntiqueWhite"/>
 

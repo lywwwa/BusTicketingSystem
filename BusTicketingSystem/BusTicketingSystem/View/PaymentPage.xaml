@@ -24,8 +24,6 @@
                 TextColor="AntiqueWhite"
                    x:Name="Contact"/>
 
-            
-
             <Entry Placeholder="Email Address"
                 VerticalOptions="Start"
                 HorizontalOptions="Fill"

@@ -6,9 +6,7 @@ namespace BusTicketingSystem.Controller
 {
     class Randomizer
     {
-
         
-
         public void RandomGen(int noseats)
         {
           
@@ -20,7 +18,5 @@ namespace BusTicketingSystem.Controller
         }
 
    
-        
-
     }
 }

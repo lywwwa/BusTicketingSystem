@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusTicketingSystem.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,12 +16,15 @@ namespace BusTicketingSystem.View
         int qty = 0;
         int tapCount=0, tapCount1 = 0, tapCount2 = 0,tapCount3=0, tapCount4=0, tapCount5 = 0, tapCount6 = 0, tapCount7 = 0, tapCount8 = 0, tapCount9 = 0, tapCount10=0;
         int tapCount11 = 0, tapCount12 = 0, tapCount13 = 0, tapCount14 = 0, tapCount15 = 0, tapCount16 = 0, tapCount17 = 0, tapCount18 = 0, tapCount19 = 0, tapCount20 = 0, tapCount21 = 0;
-        int tapCount22 = 0, tapCount23 = 0, tapCount24 = 0, tapCount25 = 0, tapCount26 = 0, tapCount27 = 0, tapCount28 = 0, tapCount29 = 0;
-
+        int tapCount22 = 0, tapCount23 = 0, tapCount24 = 0, tapCount25 = 0, tapCount26 = 0, tapCount27 = 0, tapCount28 = 0;
+        
         public SeatPlanPage ()
 		{
-			InitializeComponent ();
-		}
+            
+            InitializeComponent ();
+            Price.Text = (BusController.GetBusFee()).ToString();
+        }
+        
 
         public void Clicked_Seat1(object sender,EventArgs e)
         {
@@ -37,11 +41,8 @@ namespace BusTicketingSystem.View
                 qty++;
             }
             
-            
-            Quantity.Text = ""+qty;
-           
-        
-        
+            Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
 
         public void Clicked_Seat2(object sender, EventArgs e)
@@ -58,9 +59,9 @@ namespace BusTicketingSystem.View
                 s2.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
 
         public void Clicked_Seat3(object sender, EventArgs e)
@@ -77,9 +78,9 @@ namespace BusTicketingSystem.View
                 s3.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
 
         public void Clicked_Seat4(object sender, EventArgs e)
@@ -96,9 +97,9 @@ namespace BusTicketingSystem.View
                 s4.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
 
         public void Clicked_Seat5(object sender, EventArgs e)
@@ -116,8 +117,8 @@ namespace BusTicketingSystem.View
                 qty++;
             }
 
-
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat6(object sender, EventArgs e)
         {
@@ -133,9 +134,9 @@ namespace BusTicketingSystem.View
                 s6.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat7(object sender, EventArgs e)
         {
@@ -151,9 +152,9 @@ namespace BusTicketingSystem.View
                 s7.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat8(object sender, EventArgs e)
         {
@@ -169,9 +170,9 @@ namespace BusTicketingSystem.View
                 s8.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat9(object sender, EventArgs e)
         {
@@ -187,9 +188,9 @@ namespace BusTicketingSystem.View
                 s9.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat10(object sender, EventArgs e)
         {
@@ -205,9 +206,9 @@ namespace BusTicketingSystem.View
                 s10.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat11(object sender, EventArgs e)
         {
@@ -224,8 +225,8 @@ namespace BusTicketingSystem.View
                 qty++;
             }
 
-
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat12(object sender, EventArgs e)
         {
@@ -241,9 +242,9 @@ namespace BusTicketingSystem.View
                 s12.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat13(object sender, EventArgs e)
         {
@@ -259,9 +260,9 @@ namespace BusTicketingSystem.View
                 s13.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat14(object sender, EventArgs e)
         {
@@ -277,9 +278,9 @@ namespace BusTicketingSystem.View
                 s14.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat15(object sender, EventArgs e)
         {
@@ -295,9 +296,9 @@ namespace BusTicketingSystem.View
                 s15.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat16(object sender, EventArgs e)
         {
@@ -313,15 +314,15 @@ namespace BusTicketingSystem.View
                 s16.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat17(object sender, EventArgs e)
         {
             tapCount16++;
 
-            if (tapCount17 % 2 == 0)
+            if (tapCount16 % 2 == 0)
             {
                 s17.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -331,15 +332,15 @@ namespace BusTicketingSystem.View
                 s17.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat18(object sender, EventArgs e)
         {
-            tapCount18++;
+            tapCount17++;
 
-            if (tapCount18 % 2 == 0)
+            if (tapCount17 % 2 == 0)
             {
                 s18.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -349,15 +350,15 @@ namespace BusTicketingSystem.View
                 s18.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat19(object sender, EventArgs e)
         {
-            tapCount19++;
+            tapCount18++;
 
-            if (tapCount19 % 2 == 0)
+            if (tapCount18 % 2 == 0)
             {
                 s19.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -367,15 +368,15 @@ namespace BusTicketingSystem.View
                 s19.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat20(object sender, EventArgs e)
         {
-            tapCount20++;
+            tapCount19++;
 
-            if (tapCount20 % 2 == 0)
+            if (tapCount19 % 2 == 0)
             {
                 s20.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -385,15 +386,15 @@ namespace BusTicketingSystem.View
                 s20.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat21(object sender, EventArgs e)
         {
-            tapCount21++;
+            tapCount20++;
 
-            if (tapCount21 % 2 == 0)
+            if (tapCount20 % 2 == 0)
             {
                 s21.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -403,15 +404,15 @@ namespace BusTicketingSystem.View
                 s21.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat22(object sender, EventArgs e)
         {
-            tapCount22++;
+            tapCount21++;
 
-            if (tapCount22 % 2 == 0)
+            if (tapCount21 % 2 == 0)
             {
                 s22.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -421,15 +422,15 @@ namespace BusTicketingSystem.View
                 s22.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat23(object sender, EventArgs e)
         {
-            tapCount23++;
+            tapCount22++;
 
-            if (tapCount23 % 2 == 0)
+            if (tapCount22 % 2 == 0)
             {
                 s23.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -439,15 +440,15 @@ namespace BusTicketingSystem.View
                 s23.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat24(object sender, EventArgs e)
         {
-            tapCount24++;
+            tapCount23++;
 
-            if (tapCount24 % 2 == 0)
+            if (tapCount23 % 2 == 0)
             {
                 s24.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -457,15 +458,15 @@ namespace BusTicketingSystem.View
                 s24.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat25(object sender, EventArgs e)
         {
-            tapCount25++;
+            tapCount24++;
 
-            if (tapCount25 % 2 == 0)
+            if (tapCount24 % 2 == 0)
             {
                 s25.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -475,15 +476,15 @@ namespace BusTicketingSystem.View
                 s25.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat26(object sender, EventArgs e)
         {
-            tapCount26++;
+            tapCount25++;
 
-            if (tapCount26 % 2 == 0)
+            if (tapCount25 % 2 == 0)
             {
                 s26.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -493,15 +494,15 @@ namespace BusTicketingSystem.View
                 s26.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat27(object sender, EventArgs e)
         {
-            tapCount27++;
+            tapCount26++;
 
-            if (tapCount27 % 2 == 0)
+            if (tapCount26 % 2 == 0)
             {
                 s27.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -511,15 +512,15 @@ namespace BusTicketingSystem.View
                 s27.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat28(object sender, EventArgs e)
         {
-            tapCount28++;
+            tapCount27++;
 
-            if (tapCount28 % 2 == 0)
+            if (tapCount27 % 2 == 0)
             {
                 s28.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -529,15 +530,15 @@ namespace BusTicketingSystem.View
                 s28.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
-
+            
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
         public void Clicked_Seat29(object sender, EventArgs e)
         {
-            tapCount29++;
+            tapCount28++;
 
-            if (tapCount29 % 2 == 0)
+            if (tapCount28 % 2 == 0)
             {
                 s29.BackgroundColor = Color.FromHex("#52add4");
                 qty--;
@@ -547,9 +548,9 @@ namespace BusTicketingSystem.View
                 s29.BackgroundColor = Color.FromHex("#63539e");
                 qty++;
             }
-
             
             Quantity.Text = "" + qty;
+            TotAmt.Text = (qty * BusController.GetBusFee()).ToString();
         }
     
         public async void Clicked_Checkout(object sender,EventArgs e)

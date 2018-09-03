@@ -17,6 +17,14 @@ namespace BusTicketingSystem.Controller
             
         }
 
+        public void GenRefNo()
+        {
+            Random rand = new Random();
+            int randomnumber = rand.Next(0,9);
+            int randomnumber1 = rand.Next(10, 30);
+            Controller.PaymentController.SetRefNo(randomnumber+randomnumber1);
+        }
+
    
     }
 }

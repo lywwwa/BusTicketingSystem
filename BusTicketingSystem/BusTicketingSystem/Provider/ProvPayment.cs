@@ -37,6 +37,16 @@ namespace BusTicketingSystem.Provider
             Payment.ToTQty = qty;
         }
 
+        public static void SetRefNo(int refno)
+        {
+            Payment.ReferenceNo = refno;
+        }
+
+        public static int GetRefNo()
+        {
+            return Payment.ReferenceNo;
+        }
+
         public static double GetTotAmt()
         {
             return Payment.TotAmt;

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BusTicketingSystem.View.SearchPage">
+             x:Class="BusTicketingSystem.View.SearchPage"
+             Title="Cancel Reservation"
+             BackgroundColor="#0E4D92">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Padding="0,80,0,0">
@@ -27,6 +29,16 @@
                     VerticalOptions="CenterAndExpand"
                     AbsoluteLayout.LayoutBounds=".5,.40,.83,.25"
                     AbsoluteLayout.LayoutFlags="All"/>
+
+                <Button Text="Search"
+                        Clicked="Clicked_Search"
+                        TextColor="AntiqueWhite"
+                        BackgroundColor="#524365"
+                        FontSize="Medium"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        AbsoluteLayout.LayoutBounds=".5,.80,.83,.25"
+                        AbsoluteLayout.LayoutFlags="All"/>
             </AbsoluteLayout>
         </StackLayout>
     </ContentPage.Content>

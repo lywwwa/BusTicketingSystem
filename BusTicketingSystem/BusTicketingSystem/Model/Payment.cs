@@ -18,6 +18,8 @@ namespace BusTicketingSystem.Model
 
         public static int ReferenceNo { set; get; }
 
+        public static int QtySeats { set; get; }
+
         public static double TotAmt { set; get; }
 
         public static int ToTQty { set; get; }

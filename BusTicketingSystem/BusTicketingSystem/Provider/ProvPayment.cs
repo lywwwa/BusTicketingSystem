@@ -42,6 +42,10 @@ namespace BusTicketingSystem.Provider
             Payment.ReferenceNo = refno;
         }
 
+        public static void SetSeats(int seatqty)
+        {
+            Payment.QtySeats = seatqty;
+        }
         public static int GetRefNo()
         {
             return Payment.ReferenceNo;

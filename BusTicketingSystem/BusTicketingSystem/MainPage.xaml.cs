@@ -23,7 +23,8 @@ namespace BusTicketingSystem
 
         public void Cancel_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new View.SearchPage());
+            DisplayAlert("", "To Cancel Reservation go to your nearest Bus Ticketing Store. Cancellation Fee: 50.00", "OK");
+            // this.Navigation.PushAsync(new View.SearchPage());
             // this.Navigation.RemovePage(this);
         }
     }

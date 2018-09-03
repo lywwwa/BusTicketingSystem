@@ -561,7 +561,7 @@ namespace BusTicketingSystem.View
                 if (autoseat)
                 {
                     Controller.Randomizer CR = new Controller.Randomizer();
-                    CR.RandomGen(1);
+                    CR.RandomGen();
                     await Navigation.PushAsync(new PaymentPage());
                 }
         }

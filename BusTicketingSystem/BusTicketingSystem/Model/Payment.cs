@@ -15,5 +15,9 @@ namespace BusTicketingSystem.Model
         public static string CustEmail { set; get; }
 
         public static string CustAddress { set; get; }
+
+        public static double TotAmt { set; get; }
+
+        public static int ToTQty { set; get; }
     }
 }

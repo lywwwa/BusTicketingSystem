@@ -17,6 +17,8 @@ namespace BusTicketingSystem.Provider
             Bus.BusSched = sched;
         }
 
+        
+
         public static void SetBusFee(string type)
         {
 
@@ -56,6 +58,7 @@ namespace BusTicketingSystem.Provider
             return Bus.BusSched;
         }
 
+       
         public static double GetBusFee()
         {
             return Bus.BusFee;

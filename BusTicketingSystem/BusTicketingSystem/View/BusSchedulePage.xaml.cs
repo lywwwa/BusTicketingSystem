@@ -15,15 +15,11 @@ namespace BusTicketingSystem.View
 		public BusSchedulePage ()
 		{
 			InitializeComponent ();
-            
-            BindingContext = new Controller.BusScheduleController();
-         
+		}
 
-        }
-
-        public async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        public void OnItemSelected(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ClickedSchedulePage());
+            this.Navigation.PushAsync(new ClickedSchedulePage());
         }
     }
 }

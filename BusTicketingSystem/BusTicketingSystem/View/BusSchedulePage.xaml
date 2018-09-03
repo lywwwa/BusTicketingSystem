@@ -5,32 +5,38 @@
              Title="Bus Schedule"
              BackgroundColor="#0E4D92"
              >
-   
+
     <ContentPage.Content>
-    <ListView ItemsSource="{Binding BusSchedules}"
-                  HasUnevenRows="True"
-              ItemSelected="OnItemSelected">
-            <ListView.ItemTemplate >
-            <DataTemplate >
-                    <ViewCell >
-                        <StackLayout Orientation="Vertical" >
-                            <Grid HeightRequest="20"/>
-                            <StackLayout Orientation="Vertical"
-                                     Padding="20" BackgroundColor="#52add4">
-                                <Label Text="{Binding Origin}" 
+        <ScrollView>
+            <StackLayout Orientation="Vertical" >
+                <Grid HeightRequest="40"/>
+                <Button BackgroundColor="#52add4"
+                        Text="Quiapo-Pasig
+                                12:30 PM" 
                                FontSize="Medium"
-                               TextColor="AntiqueWhite"/>
-                                <Label Text="{Binding Destination}"
+                               TextColor="AntiqueWhite"
+                        Clicked="OnItemSelected"/>
+
+                <Grid HeightRequest="40"/>
+                <Button BackgroundColor="#52add4"
+                        Text="Quiapo-Pasig
+                                2:30 PM" 
                                FontSize="Medium"
-                               TextColor="AntiqueWhite"/>
-                        <Label Text="{Binding Time} "
-                               FontSize="Small"
-                               TextColor="AntiqueWhite"/>
-                        </StackLayout>
-                        </StackLayout>
-                    </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                               TextColor="AntiqueWhite"
+                        Clicked="OnItemSelected"/>
+
+                <Grid HeightRequest="40"/>
+                <Button BackgroundColor="#52add4"
+                        Text="Quiapo-Pasig
+                                3:30 PM" 
+                               FontSize="Medium"
+                               TextColor="AntiqueWhite"
+                        Clicked="OnItemSelected"/>
+            </StackLayout>
+
+                
+
+
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

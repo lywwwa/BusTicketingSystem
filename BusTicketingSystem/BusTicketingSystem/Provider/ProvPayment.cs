@@ -27,5 +27,24 @@ namespace BusTicketingSystem.Provider
             Payment.CustAddress = address;
         }
 
+        public static void SetTotAmt(double TAmt)
+        {
+            Payment.TotAmt=TAmt;
+        }
+
+        public static void SetTotQty(int qty)
+        {
+            Payment.ToTQty = qty;
+        }
+
+        public static double GetTotAmt()
+        {
+            return Payment.TotAmt;
+        }
+
+        public static int GetTotQty()
+        {
+            return Payment.ToTQty;
+        }
     }
 }

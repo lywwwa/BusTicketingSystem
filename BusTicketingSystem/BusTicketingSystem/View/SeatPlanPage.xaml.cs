@@ -570,11 +570,8 @@ namespace BusTicketingSystem.View
                 var check = await DisplayAlert("Question?", "Are you sure?", "Yes", "No");
                 if (check)
                 {
-                    Model.Data MD = new Model.Data();
-
-                    MD.Quantty(int.Parse(Quantity.Text));
-                    
-
+                    Controller.PaymentController.SetTotAmt((qty * BusController.GetBusFee()));
+                    Controller.PaymentController.SetTotQty(qty);
                     await Navigation.PushAsync(new PaymentPage());
                 }
 

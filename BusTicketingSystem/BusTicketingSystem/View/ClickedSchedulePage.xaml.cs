@@ -13,24 +13,13 @@ namespace BusTicketingSystem.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ClickedSchedulePage : ContentPage
 	{
-        Model.Data dt = new Model.Data();
+  
 
         public ClickedSchedulePage ()
 		{
 			InitializeComponent ();
 
-            /*
-            Model.Data dt = new Model.Data();
-
-            string prc = dt.Prices("Ordinary");
-            OrdPrice.Text = prc;
-
-            string prc1 = dt.Prices("Regular");
-            RegPrice.Text = prc1;
-
-            string prc2 = dt.Prices("Deluxe");
-            DelPrice.Text = prc2;
-            */
+            
         }
 
         public void OnTapOrdinary(object sender, EventArgs args)
@@ -38,7 +27,7 @@ namespace BusTicketingSystem.View
             BusController.SetBusType("Ordinary");
             BusController.SetBusFee("Ordinary");
             this.Navigation.PushAsync(new SeatPlanPage());
-            //string pr = dt.Prices("OrdinaryPrice");
+            
           
             //open seatplann for ordinary
         }
@@ -48,7 +37,7 @@ namespace BusTicketingSystem.View
             BusController.SetBusType("Regular");
             BusController.SetBusFee("Regular");
             this.Navigation.PushAsync(new SeatPlanPage());
-            //string pr1 = dt.Prices("RegularPrice");
+            
             
             //open seatplan for regular
         }
@@ -58,7 +47,7 @@ namespace BusTicketingSystem.View
             BusController.SetBusType("Deluxe");
             BusController.SetBusFee("Deluxe");
             this.Navigation.PushAsync(new SeatPlanPage());
-            //string pr2 = dt.Prices("DeluxePrice");
+           
             
             //open seatplan for deluxe
         }

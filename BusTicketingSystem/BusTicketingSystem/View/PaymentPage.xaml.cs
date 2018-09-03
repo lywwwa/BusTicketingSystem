@@ -18,7 +18,9 @@ namespace BusTicketingSystem.View
 		{
             
             InitializeComponent ();
-            
+
+            Seats.Text = Controller.PaymentController.GetTotQty().ToString();
+            Price.Text = Controller.PaymentController.GetTotAmt().ToString();
 
         }
 
@@ -30,9 +32,11 @@ namespace BusTicketingSystem.View
             }
             else
             {
-                Model.Data data_ = new Model.Data();
+                Controller.PaymentController.SetCustName(FullName.Text);
+                Controller.PaymentController.SetCustNumber(Contact.Text);
+                Controller.PaymentController.SetCustEmail(EmailAdd.Text);
+                Controller.PaymentController.SetCustAddress(Address.Text);
 
-                data_.GetUserInfo(FullName.Text, Address.Text, EmailAdd.Text, Contact.Text);
                 this.Navigation.PushAsync(new MainPage());
                 this.Navigation.RemovePage(this);
             }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BusTicketingSystem.Controller
 {
-    class PaymentController : ProvBus
+    class PaymentController : ProvPayment
     {
         //ala laman hihi
     }

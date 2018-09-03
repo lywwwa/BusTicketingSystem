@@ -6,7 +6,25 @@
     
     <ContentPage.Content>
         <ScrollView>
+            
             <StackLayout>
+                <ContentView x:Name="overlay" 
+                AbsoluteLayout.LayoutBounds="0, 0, 30, 50" 
+                AbsoluteLayout.LayoutFlags="All" 
+                BackgroundColor="#003B5C" >
+
+                    <StackLayout Padding="10" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="Quantity of Seats: " />
+                        <Entry x:Name="qtyseats" Keyboard="Numeric"/>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Cancel" 
+                                Clicked="Cancel_Clicked"/>
+                            <Button Text="Done" 
+                                Clicked="Done_Clicked"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ContentView>
                 <Label Text="Seat Reservation"
                        FontSize="Medium"
                        TextColor="AntiqueWhite"
@@ -473,8 +491,12 @@
                             Grid.ColumnSpan="2"
                             />
                 </Grid>
+               
             </StackLayout>
+            
         </ScrollView>
+        
+        
 
     </ContentPage.Content>
 </ContentPage>

@@ -7,12 +7,7 @@ namespace BusTicketingSystem.Controller
     class Randomizer
     {
         
-        public void RandomGen()
-        {
-            Random rand = new Random();
-            int randomnumber = rand.Next(1, 29);
-            Controller.PaymentController.SetSeats(randomnumber); 
-        }
+       
 
         public void GenRefNo()
         {

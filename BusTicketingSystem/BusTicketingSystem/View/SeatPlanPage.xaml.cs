@@ -22,6 +22,7 @@ namespace BusTicketingSystem.View
 		{
             
             InitializeComponent ();
+            overlay.IsVisible = false;
             Price.Text = (BusController.GetBusFee()).ToString();
         }
         
@@ -555,14 +556,44 @@ namespace BusTicketingSystem.View
     
         public async void Clicked_Checkout(object sender,EventArgs e)
         {
-            if (Quantity.Text=="0"){
+            if (Quantity.Text==""||Quantity.Text==" "||Quantity.Text=="0"){
                var autoseat = await DisplayAlert("Question?", "You didn't choose a seat.Continue?", "Yes", "No");
 
                 if (autoseat)
                 {
-                    Controller.Randomizer CR = new Controller.Randomizer();
-                    CR.RandomGen();
-                    await Navigation.PushAsync(new PaymentPage());
+
+                    overlay.IsVisible = true;
+                    s1.IsEnabled = false;
+                    s2.IsEnabled = false;
+                    s3.IsEnabled = false;
+                    s4.IsEnabled = false;
+                    s5.IsEnabled = false;
+                    s6.IsEnabled = false;
+                    s7.IsEnabled = false;
+                    s8.IsEnabled = false;
+                    s9.IsEnabled = false;
+                    s10.IsEnabled = false;
+                    s11.IsEnabled = false;
+                    s12.IsEnabled = false;
+                    s13.IsEnabled = false;
+                    s14.IsEnabled = false;
+                    s15.IsEnabled = false;
+                    s16.IsEnabled = false;
+                    s17.IsEnabled = false;
+                    s18.IsEnabled = false;
+                    s19.IsEnabled = false;
+                    s20.IsEnabled = false;
+                    s21.IsEnabled = false;
+                    s22.IsEnabled = false;
+                    s23.IsEnabled = false;
+                    s24.IsEnabled = false;
+                    s25.IsEnabled = false;
+                    s26.IsEnabled = false;
+                    s27.IsEnabled = false;
+                    s28.IsEnabled = false;
+                    s29.IsEnabled = false;
+
+
                 }
         }
             else
@@ -578,6 +609,45 @@ namespace BusTicketingSystem.View
 
             }
 
+        }
+        public async void Done_Clicked(object a,EventArgs e)
+        {
+            Controller.PaymentController.SetTotAmt((int.Parse(qtyseats.Text) * BusController.GetBusFee()));
+            Controller.PaymentController.SetTotQty(int.Parse(qtyseats.Text));
+            await Navigation.PushAsync(new PaymentPage());
+        }
+        public void Cancel_Clicked(object sender,EventArgs e)
+        {
+            overlay.IsVisible = false;
+            s1.IsEnabled = true;
+            s2.IsEnabled = true;
+            s3.IsEnabled = true;
+            s4.IsEnabled = true;
+            s5.IsEnabled = true;
+            s6.IsEnabled = true;
+            s7.IsEnabled = true;
+            s8.IsEnabled = true;
+            s9.IsEnabled = true;
+            s10.IsEnabled = true;
+            s11.IsEnabled = true;
+            s12.IsEnabled = true;
+            s13.IsEnabled = true;
+            s14.IsEnabled = true;
+            s15.IsEnabled = true;
+            s16.IsEnabled = true;
+            s17.IsEnabled = true;
+            s18.IsEnabled = true;
+            s19.IsEnabled = true;
+            s20.IsEnabled = true;
+            s21.IsEnabled = true;
+            s22.IsEnabled = true;
+            s23.IsEnabled = true;
+            s24.IsEnabled = true;
+            s25.IsEnabled = true;
+            s26.IsEnabled = true;
+            s27.IsEnabled = true;
+            s28.IsEnabled = true;
+            s29.IsEnabled = true;
         }
 	}
 }
